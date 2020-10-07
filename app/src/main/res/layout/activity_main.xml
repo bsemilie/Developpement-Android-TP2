@@ -20,22 +20,37 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="294dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="295dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="30dp"
         android:text="What do you want to do ? "
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        app:layout_constraintTop_toBottomOf="@+id/Welcome"
-        tools:layout_editor_absoluteX="58dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Welcome" />
 
     <Button
         android:id="@+id/buttonCreateBook"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="30dp"
+        android:onClick="goToCreation"
         android:text="Create book "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="146dp" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/resultBookText"
+        android:layout_width="292dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="60dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateBook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

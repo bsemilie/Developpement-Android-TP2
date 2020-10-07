@@ -16,6 +16,11 @@ class CreateBookActivity : AppCompatActivity() {
         val buttonSave = findViewById<Button>(R.id.buttonSave)
         buttonSave.setOnClickListener{
            val book = createBook();
+            val intent = Intent(this, MainActivity::class.java);
+            intent.putExtra("Book", book);
+            setResult(1,intent);
+            finish();
+
 
 
         }
